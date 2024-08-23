@@ -1,0 +1,30 @@
+body{
+    background-color:#393E41;
+    font-family:'Courier New';
+        
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2, h3{
+    background-color:#3F88C5;
+    color:white
+
+}
+p, ul{
+    color:#F6F7EB
+}
+
+/* seletor de classe */
+
+.classe{
+    font-size: 30px;
+}
+
+/* seletor de id */
+
+#sec1{
+    color:#44BBA4;
+}
