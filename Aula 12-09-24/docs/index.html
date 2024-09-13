@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <link rel="stylesheet" href="../style/style.css">
+        <title>Aula 12-09-24</title>
+    </head>
+    <body>
+        <div>
+            <h1>Formulário</h1>
+        </div>
+        <div id="formulario">
+            <form method="get" action="#">
+                <div>
+                    <label for="name">Nome:*</label><br> <!--"for" precisa ser igual a "id", id deve ser único-->
+                    <input type="text" name="nome" id="name" placeholder="João da Silva" required> <!--Required: preenchimento obrigatório-->
+                </div>
+                <div>
+                    <br>
+                    <label for="comment">Comentário:</label> 
+                    <textarea cols="29" rows="5" name="comentario" id="comment">
+                    </textarea>
+                </div>
+                <div>
+                    <br>
+                    <label for="qtd">Quantidade:</label>
+                    <br>
+                    <input type="number" name="Quantidade" id="qtd" min="1" max="5">
+                </div>
+                <div>
+                    <br>
+                    <label for="mail">E-mail:</label>
+                    <br>
+                    <input type="email" name="e-mail" id="mail">
+                </div>
+                <div>
+                    <br>
+                    <label for="nasc">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id='nasc'>
+                </div>
+                <div>
+                    <br>
+                    <label for="sn">Senha:</label>
+                    <br>
+                    <input type="password" name="senha" id="sn">
+                </div>
+                <div>
+                    <br>
+                    <p>Você é feliz?</p>
+                    <input type="radio" name="feliz" id="y" checked> <!--Checked: inicia selecionado por padrão-->
+                    <label for="y">Sim</label>
+                    <input type="radio" name="feliz" id="n">
+                    <label for="n">Não</label>
+                </div>
+                <div>
+                    <p>O que te faz feliz?</p>
+                    <input type="checkbox" value="dinheiro" name="dinheiro" id="money"> <!--Value: o que é enviado para o sitema quando o formulario é enviado (se metodo=get, aparece na URL)-->
+                    <label for="money">Dinheiro</label>
+                    <input type="checkbox" value="família" name="familia" id="family">
+                    <label for="family">Família</label>
+                    <br>
+                    <input type="checkbox" value="amor" name="amor" id="love">
+                    <label for="love">Amor</label>
+                    <input type="checkbox" value="férias" name="ferias" id="f">
+                    <label for="f">Férias</label>
+                </div>
+                <div>
+                    <br>
+                    <label for="est">Selecione seu estado:</label>
+                    <select name="estado" id="est">
+                        <option disabled selected></option> <!--Disabled: não deixa o usuário selecionar. Selected: selecionado por padrão-->
+                        <option value="PR" selected>Paraná</option> 
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+
+                </div>
+                <div id="button">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

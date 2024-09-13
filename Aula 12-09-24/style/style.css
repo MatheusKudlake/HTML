@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #242469;
+    font-family: Montserrat;
+}
+
+h1{
+    text-align: center;
+    color:white;
+    font-size:200%;
+}
+
+#formulario{
+    color:white;
+    background-color: rgb(83, 83, 83);
+    border: solid;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-left:5px;
+}
+
+#comment{
+    display:block;
+}
+
+#button{
+    text-align: center;
+}
