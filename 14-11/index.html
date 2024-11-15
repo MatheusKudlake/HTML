@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e Tabela</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container p-0">
+        <div class="row">
+            <div class="col-12 bg-secondary-subtle p-4 mb-4 text-center">
+                <h1 class="display-2">Formulário com JS</h1>
+            </div>
+            <div class="row">
+                <div class="col-2"></div> <!--Espaçamento-->
+                <div class="mb-3 col-4"> 
+                    <div class="col-2"></div>
+                    <label for="n" class="form-label">Nome</label>
+                    <input type="text" id="n" class="form-control" placeholder="Primeiro Nome">
+                </div>
+                <div class="mb-3 col-4">
+                    <label for="sn" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" placeholder="Sobrenome">
+                </div>
+                <div class="col-2"></div> <!--Espaçamento-->
+                <div class="col-2"></div>
+                <div class="mb-3 col-8">
+                    <label for="e" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="email@email.com">
+                    <button class="btn btn-primary mt-3">Salvar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div> <!--Espaçamento-->
+                <div class="col-8">
+                    <h1 class="mb-3 text-center">Usuários cadastrados</h1>
+                    <table class="table table-hover table-stripped text-center">
+                        <thead>
+                            <tr>                                
+                                <th scope="col">Id</th>
+                                <th scope="col">Nome completo</th>
+                                <th scope="col">E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">1</td>
+                                <td>Juliana Costa</td>
+                                <td>juliana.silva@up.edu.br</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <script src="js/script.js"></script>
+</body>
+</html>
